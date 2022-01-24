@@ -606,6 +606,8 @@ display: block;    }
         padding: 2rem;
 
     }
+    .about_me .box-container{
+        padding: 0;
    
     .projects{
         padding: 1rem;
