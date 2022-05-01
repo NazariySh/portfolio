@@ -262,7 +262,7 @@ font-size: 2rem;
     border: 3rem solid  rgba(44, 44, 44, 1);
    padding: .1rem 1rem;
   min-height: 65vh;
-  background: url('img/image1.webp') no-repeat;
+  background: url('../img/image1.webp') no-repeat;
   background-size: cover;
   object-fit: cover;
   background-position: center;
@@ -606,8 +606,6 @@ display: block;    }
         padding: 2rem;
 
     }
-    .about_me .box-container{
-        padding: 4rem 4%;
    
     .projects{
         padding: 1rem;
