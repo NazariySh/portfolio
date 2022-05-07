@@ -22,9 +22,7 @@ body{
     background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
   
 }
-section{
-    padding: 2rem 9%;
-}
+
 ::-webkit-scrollbar{
     width: 1rem;
 }
@@ -45,11 +43,12 @@ section{
     top: 0; left: 0;right: 0;
     z-index: 1000;
     display: flex;
+    height: 10vh;
     align-items: center;
     justify-content: space-between;
      background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
     ;
-    padding: 2rem 9%;
+    padding: 1rem 5%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     
 }
@@ -91,20 +90,105 @@ section{
 }
 
 
+main{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9%;
+    
+    
+}
+.left-back{
+    position: absolute;
+    left: 0;
+   
+    
 
+    padding: 22rem 1rem 0 1rem;
+    
+    height: 90vh;
+    display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: column;
+}
+.left-back .box{
+  
+    width: 5px;
+    height: 40rem;
+    background-color: white;
+
+}
+.left-back h2{
+    transform: rotate(-90deg);
+   font-size: 30px;
+    margin-bottom: 5rem;
+    color: #852c98;
+     color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.left-back a i{
+    font-size: 30px;
+   margin: 10px;
+   color: #fff;
+}
+.right-back{
+    position: absolute;
+    right: 0;
+    top: 0;
+ 
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.right-back h2{
+    transform: rotate(90deg);
+   
+   font-size: 30px;
+    margin-bottom: 5rem;
+    color: #852c98;
+     color: #fff;
+}
+footer{
+    position: absolute;
+height: 10vh;
+    width: 80%;
+   padding: 2rem;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+footer h2{
+ 
+   font-size: 30px;
+  
+    color: #852c98;
+     color: #fff;
+}
 .home{
-    min-height: 80vh;
+   height: 70vh;
+
+   width: 90%;
 display: flex;
 flex-wrap: wrap;
 gap: 0.5rem;
 align-items: center;
+padding: 1rem;
    
-    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+ 
    
     
 }
 .home .content{
-   flex: 1 1 40rem;
+   flex: 1 1 30rem;
     text-align: left;
 }
 .home .content h1 span{
@@ -125,12 +209,12 @@ align-items: center;
     
 }
 .home .image{
-   flex: 1 1 40rem;
+   flex: 1 1 30rem;
    
 }
 .home .image img{
     width: 100%;
-    padding: 1rem;
+  
    
 }
 
@@ -294,105 +378,7 @@ font-size: 2rem;
     .about_me .box-container  .about p{
         font-size: 15px;
     }
-    .projects{
-        background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
-        padding: 5rem 15%;
-
-    }
-    .projects .portfolio_box .carousel.slide{
-         display: flex;
-        flex-wrap: nowrap;
-        gap: 1rem;
-       
-    }
-    .projects .portfolio_box .carousel.slide .box{
-        flex: 1 1 5rem;
-        
-        max-width: 5rem;
-       
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-left{
-        flex: 2 1 50rem;
-        border-radius: 20px;
-        min-height: 47vh;
-        background: url('../img/food.png');
-        background-position: center;
-       
-        background-size: cover;
-        object-fit: cover;
-       
-    }
-   
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right{
-        flex: 1 1 30rem;
-        padding: 3rem;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right a{
-        text-decoration: none;
-        color: #2196f3;
-        width: 12rem;
-       text-align: center;
-      position: relative;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      transition: .2s;
-        padding: 1rem;
-        font-size: 15px;
-        background: goldenrod;
-        box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
-        margin-top: .5rem;
-        border-radius: 5px;
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right a span{
-        position: absolute;
-
-display: block;    }
-
-
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right a:hover{
-        color: #255784;
-        background: #2196f3;
-        box-shadow: 0 0 10px #2196f3,  0 0 40px #2196f3,  0 0 80px #2196f3;
-        transition-delay: .2s;
-    }
-    .projects .portfolio_box .carousel.slide .box button{
-      top: 50%;
-      margin-top: -2.5rem;
-
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner{
-       flex: 5 1 30rem;
-       justify-self: center;
-      border-radius: 20px;
-        background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-        padding: 2rem;
-
-    }
-    .projects .portfolio_box .carousel.slide button{
-     
-        background: goldenrod;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-    }
-    .projects h2{
-        text-align: center;
-        color: #fff;
-        font-size: 30px;
-    }
-    .projects h2 span{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: gold;
-    }
+  
 
     .all_projects{
         background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
@@ -432,92 +418,7 @@ display: block;    }
         box-shadow: 0 0 4px #fff,  0 0 16px #fff,  0 0 32px #fff;
 
     }
-    .footer{
-        background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-        padding: 2rem 9%;
-     
-    }
-    .footer ul{
-         display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-     
-      
-    }
-    .footer ul li p{
-        color: #fff;
-        font-size: 20px;
-        text-align: center;
-    }
-    .footer ul li{
-       display: flex;
-          flex: 1 1 20rem;
-       cursor: pointer;
-       text-decoration: none;
-      align-items: center;
-     justify-content: center;
-      list-style: none;
-    position: relative;
-       cursor: pointer;
-      
-    }
-    .footer ul li a{
-        text-decoration: none;
-    }
    
-    .footer ul li a .fab.fa-twitter{
-        color: #222;
-        font-size: 6rem;
-        border-top: 4px solid #25d366;
-        transition: 0.5s ease-in-out;
-    }
-    .footer ul li a .fab.fa-twitter:hover {
-        color: #25d366;
-        border-bottom: 4px solid #25d366;
-        font-size: 6rem;
-        border-top: 0;
-        
-    }
-    .footer ul li a .fab.fa-youtube{
-        color: #222;
-        font-size: 6rem;
-        border-top: 4px solid #ff0000 ;
-        transition: .5s ease-in-out;
-    }
-    .footer ul li a .fab.fa-youtube:hover {
-        color: #ff0000;
-        border-bottom: 4px solid #ff0000 ;
-        font-size: 6rem;
-        border-top: 0;
-      
-    }
-    .footer ul li a .fab.fa-telegram{
-        color: #222;
-        font-size: 6rem;
-        border-top: 4px solid #1da1f2 ;
-        transition: .5s ease-in-out;
-    }
-    .footer ul li a .fab.fa-telegram:hover {
-        color: #1da1f2;
-        border-bottom: 4px solid #1da1f2 ;
-        
-        font-size: 6rem;
-        border-top: 0;
-      
-    }
-    .footer ul li a .fab.fa-github-square{
-        color: #222;
-        font-size: 6rem;
-        border-top: 4px solid #fff ;
-        transition: .5s ease-in-out;
-    }
-    .footer ul li a .fab.fa-github-square:hover {
-        color: #fff;
-        border-bottom: 4px solid #fff ;
-        font-size: 6rem;
-        border-top: 0;
-      
-    }
     .auto-input{
         color:goldenrod
 
