@@ -114,14 +114,24 @@ main{
    justify-content: flex-end;
    flex-direction: column;
 }
-.left-back .box{
+.contacts{
+    padding: 1rem;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+}
+ .box{
   
     width: 5px;
-    height: 40rem;
+    height: 20rem;
     background-color: white;
 
 }
-.left-back h2{
+.contacts h2{
     transform: rotate(-90deg);
    font-size: 30px;
     margin-bottom: 5rem;
@@ -131,17 +141,21 @@ main{
 a{
     color: #fff;
     text-decoration: none;
-
+     transform: none;
 
 
 
 
     
 }
-.left-back a i{
+.contacts a i{
     font-size: 30px;
    margin: 10px;
    color: #fff;
+   cursor: pointer;
+}
+.contacts a .fab:hover{
+    font-size: 40px ;
 }
 .right-back{
     position: absolute;
@@ -491,7 +505,7 @@ font-size: 2rem;
           display: block;
           border: .2rem solid rgba(0, 0, 0, 0.1);
           border-left: .5rem solid goldenrod;
-          color: #fff;
+          color: rgb(37, 37, 37);
       }
       .header{
         padding: 2rem;
@@ -500,9 +514,19 @@ font-size: 2rem;
       .projects{
         padding: 1rem;
     }
+    .home .content h1{
+        font-size: 30px;
+    }
+    .home .content h1 span{
+        font-size: 30px;
+    }
+    .home .content p{
+        font-size: 10px;
+    }
+   
 }
 
-@media(max-width:450px){
+@media(max-width:460px){
     html{
         font-size:50%;
         
@@ -513,7 +537,9 @@ font-size: 2rem;
         padding: 2rem;
 
     }
-   
+   main{
+       height: 130vh;
+   }
     .projects{
         padding: 1rem;
         
