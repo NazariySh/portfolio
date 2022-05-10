@@ -63,7 +63,7 @@ body{
   background-position: center;
 }
 
-.header .navbar a{
+.header  a{
     font-size: 2.5rem;
     margin-left: 7rem;
     color: #fff;
@@ -71,6 +71,7 @@ body{
 
 
 }
+
  #menu-bar{
     font-size: 3rem;
     cursor: pointer
@@ -101,54 +102,59 @@ main{
     
 }
 .left-back{
+  
     position: absolute;
     left: 0;
-   
-    
-
-    padding: 22rem 1rem 0 1rem;
-    
-    height: 90vh;
+    top: 0;
+ 
+  
+    height: 100%;
     display: flex;
    align-items: center;
-   justify-content: flex-end;
-   flex-direction: column;
+   justify-content: center;
 }
 .contacts{
-    padding: 1rem;
+    position: fixed;
+    padding: 1rem 1rem 0 3rem;
     left: 0;
     bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: fixed;
+   
 }
- .box{
+.contacts .box{
   
     width: 5px;
-    height: 20rem;
+    height: 10rem;
     background-color: white;
 
 }
-.contacts h2{
+.left-back h2{
     transform: rotate(-90deg);
-   font-size: 30px;
-    margin-bottom: 5rem;
+   font-size: 3rem;
+   text-align: center;
+ 
     color: #852c98;
      color: #fff;
 }
 a{
     color: #fff;
     text-decoration: none;
-     transform: none;
+ 
 
 
 
 
     
 }
+a:hover{
+    font-size: 3.2rem;
+    color: #fff;
+}
 .contacts a i{
+    position: relative;
     font-size: 30px;
    margin: 10px;
    color: #fff;
@@ -162,7 +168,7 @@ a{
     right: 0;
     top: 0;
  
-    padding: 1rem;
+   
     height: 100%;
     display: flex;
    align-items: center;
@@ -171,7 +177,7 @@ a{
 .right-back h2{
     transform: rotate(90deg);
    
-   font-size: 30px;
+    font-size: 3rem;
     margin-bottom: 5rem;
     color: #852c98;
      color: #fff;
@@ -188,7 +194,7 @@ height: 10vh;
 }
 footer h2{
  
-   font-size: 30px;
+    font-size: 3rem;
   
     color: #852c98;
      color: #fff;
