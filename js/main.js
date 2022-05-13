@@ -4,8 +4,8 @@ var typed = new Typed(".auto-input", {
     backSpeed: 100,
     loop:true
 })
-let menu = document.querySelector('#menu-bar')
-let navbar = document.querySelector('.navbar')
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
 menu.onclick = () =>{
     menu.classList.toggle('fa-times')
     navbar.classList.toggle('active')
