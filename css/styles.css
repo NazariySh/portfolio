@@ -1,5 +1,7 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
 *{
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -27,6 +29,7 @@ section{
 }
 ::-webkit-scrollbar{
     width: 1rem;
+    height: 1rem;
 }
 ::-webkit-scrollbar-track{
     background:#1C1C1C 
@@ -49,7 +52,7 @@ section{
     justify-content: space-between;
      background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
     ;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     
 }
@@ -173,6 +176,11 @@ font-size: 2rem;
 
 
 .skills{
+    min-height: 100vh;
+    
+    position: relative;
+    display: flex;
+    padding: 1rem;
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
     
 }
@@ -180,10 +188,21 @@ font-size: 2rem;
  display: flex;
  flex-wrap: wrap;
  gap: 2rem;
- 
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ position: relative;
+ z-index: 1000;
 }
 .skills .box-container .box{
     flex: 1 1 41rem;
+    display: flex;
+   
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+    z-index: 1000;
     
 }
 .skills .box-container .box .prog{
@@ -241,45 +260,73 @@ font-size: 2rem;
    
 }
 .about_me{
-    
-    background: url('../img/Ellips.png');
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+min-height: 100vh;
+
+position: relative;
+padding: 0;
+
+overflow: hidden;
+
    
 }
-.about_me .box-container{
-    display: flex;
+
+.video__media{
+    width: 100%;
+    height: auto;
    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.about_me .box-container{
+    width: 100%;
+  
+  height: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+    left: 0;
+    top: 0;
+ z-index: 1000;
     flex-wrap: wrap;
-   gap: .5rem;
+   gap: 3rem;
     padding: 4rem 9%;
     
     
 }
 
 
+
 .about_me .box-container  .image1{
-    border: 3rem solid  rgba(44, 44, 44, 1);
-   padding: .1rem 1rem;
-  min-height: 65vh;
-  background: url('../img/image1.webp') no-repeat;
-  background-size: cover;
-  object-fit: cover;
-  background-position: center;
+  
+   padding: 6rem;
+
+
+  
    flex: 1 1 30rem;
-   align-self: center;
-   border-radius: 20px;
+ 
    
    
   
+}
+.about_me .box-container  .image1 img{
+     object-fit: cover;
+     width: 100%;
+    max-height: 50rem;
+    animation: spaceman 3s linear infinite;
+     
 }
 
 
 .about_me .box-container  .about{ 
     flex: 5 1 30rem;
-    background: rgba(44, 44, 44, 1);
+   
         padding: 2rem  ;
-       border-radius: 20px;
+        border: 2px solid #fff;
+       border-radius: 5px;
   text-align: center;
   min-height: 60vh;
   color: #fff;
@@ -294,97 +341,15 @@ font-size: 2rem;
     .about_me .box-container  .about p{
         font-size: 15px;
     }
+   
+
     .projects{
         background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
-        padding: 5rem 15%;
+        padding: 10rem 9% ;
 
-    }
-    .projects .portfolio_box .carousel.slide{
-         display: flex;
-        flex-wrap: nowrap;
-        gap: 1rem;
-       
-    }
-    .projects .portfolio_box .carousel.slide .box{
-        flex: 1 1 5rem;
-        
-        max-width: 5rem;
-       
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-left{
-        flex: 2 1 50rem;
-        border-radius: 20px;
-        min-height: 47vh;
-        background: url('../img/food.png');
-        background-position: center;
-       
-        background-size: cover;
-        object-fit: cover;
-       
-    }
-   
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right{
-        flex: 1 1 30rem;
-        padding: 3rem;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right a{
-        text-decoration: none;
-        color: #2196f3;
-        width: 12rem;
-       text-align: center;
-      position: relative;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      transition: .2s;
-        padding: 1rem;
-        font-size: 15px;
-        background: goldenrod;
-        box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
-        margin-top: .5rem;
-        border-radius: 5px;
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right a span{
-        position: absolute;
-
-display: block;    }
-
-
-    .projects .portfolio_box .carousel.slide .carousel-inner .carousel-item .prog-container .prog-right a:hover{
-        color: #255784;
-        background: #2196f3;
-        box-shadow: 0 0 10px #2196f3,  0 0 40px #2196f3,  0 0 80px #2196f3;
-        transition-delay: .2s;
-    }
-    .projects .portfolio_box .carousel.slide .box button{
-      top: 50%;
-      margin-top: -2.5rem;
-
-    }
-    .projects .portfolio_box .carousel.slide .carousel-inner{
-       flex: 5 1 30rem;
-       justify-self: center;
-      border-radius: 20px;
-        background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-        padding: 2rem;
-
-    }
-    .projects .portfolio_box .carousel.slide button{
-     
-        background: goldenrod;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
     }
     .projects h2{
+        padding: 1rem;
         text-align: center;
         color: #fff;
         font-size: 30px;
@@ -393,48 +358,48 @@ display: block;    }
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: gold;
     }
+    .media-scroller{
+       min-height: 30vh;
+    
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 45%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain ;
+        padding: 0 2rem 2rem ;
+    }
+    .media-element{
+     min-height: 30vh;
+        display: grid;
+        grid-template-rows: min-content;
+       
+        border-radius: 5px;
+       
+    }
+    
+    .snaps-inline{
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: 2rem ;
+    }
+    .snaps-inline > * {
+        scroll-snap-align: start;
+    }
 
-    .all_projects{
-        background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
-        padding: 5rem 5%;
-
-    }
-    .all_projects h2{
-        text-align: center;
-        color: #fff;
-        font-size: 30px;
-    }
-    .all_projects h2 span{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: gold;
-    }
-    .all_projects .project_container{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        padding: 2rem;
-    }
-    .all_projects .project_container .box{
-        flex: 1 1 35rem;
-        background: #fff;
-        min-height: 28vh;
-    }
-    .all_projects .project_container .box a img{
-        width: 100%;
-        min-height: 29vh;
+   
+    .projects a img{
+        inline-size: 100%;
+        border-radius: 5px;
+        aspect-ratio: 16 / 9;
         background-position: center;
         background-size: cover;
         position: relative;
         object-fit: cover;
     }
-    .all_projects .project_container .box:hover a img{
-       
-        box-shadow: 0 0 4px #fff,  0 0 16px #fff,  0 0 32px #fff;
-
-    }
+   
     .footer{
         background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-        padding: 2rem 9%;
+        padding: 3rem 9%;
      
     }
     .footer ul{
@@ -523,6 +488,93 @@ display: block;    }
 
     }
 
+    @keyframes spaceman{
+        0%, 100%{
+            transform: translateY(0rem);
+        }
+        50%{
+            transform: translateY(4rem);
+        }
+    }
+    .sound{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sound #audio-visual{
+        height: 30px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sound #audio-visual .audio-wire{
+        height: 50%;
+        margin: 0px 3px;
+        padding: 0px 2px;
+        background-color: #fff;
+        animation: .5s infinite alternate;
+        animation-name: animateUpDown;
+        transition: all .2s;
+    
+        
+    }
+    .sound #audio-visual .audio-wire-1{
+        animation-delay: 50ms;
+        
+       
+}
+
+.sound #audio-visual .audio-wire-2{
+    animation-delay: 100ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-3{
+    animation-delay: 200ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-4{
+    animation-delay: 250ms;
+    
+   
+}
+.sound #audio-visual .audio-wire-5{
+    animation-delay: 350ms;
+    
+   
+}
+@keyframes animateUpDown{
+    to{
+        height: 90%;
+    }
+    from{
+        height: 20%;
+    }
+}
+
+
+.canvas_place{
+    width: 100%;
+    height: 100%;
+   z-index: 1;
+
+}
+.skills #canvas1{
+   
+  
+   padding: 4rem;
+   width: 100%;
+    height: auto;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
 
 
 
@@ -558,6 +610,14 @@ display: block;    }
         padding: 2rem;
 
     }
+    .projects a img{
+        width: 100%;
+     
+        height: 30vh;
+    }
+    .media-scroller{
+        grid-auto-columns: 50%;
+    }
 }
 @media(max-width:768px){
       #menu-bar{
@@ -592,6 +652,23 @@ display: block;    }
     }
       .projects{
         padding: 1rem;
+    }
+    .media-scroller{
+        grid-auto-columns: 100%;
+    }
+   
+    .projects a img{
+        width: 100%;
+     
+        height: 30vh;
+    }
+    .about_me{
+        background-image: url('/img/Ellips.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .video__media{
+        opacity: 0;
     }
 }
 
